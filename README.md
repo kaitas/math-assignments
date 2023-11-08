@@ -46,8 +46,6 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 \newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
 \setlength{\columnseprule}{0.8pt}
 \begin{document}
-```
-
 
 基礎数学I 特訓問題　（　　　月　　　日）\\
 
@@ -137,15 +135,71 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 
 \spcval
 
-最後に 
-```
 \end{document}
 ```
-するのをわすれずに
 
 ビルドすると、こんな感じに出力されます。
 
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/97805b01-4386-4e30-ab38-dd25d015c533)
+
+## ChatGPTに問題を生成させる
+
+上記のLaTeXをChatGPT4に渡して「」と聞きます。
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/75f9e562-6391-48c5-8c8f-acb9737c43f9)
+
+```
+\documentclass[12pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[japanese]{babel}
+
+\begin{document}
+
+\title{数学の演習問題}
+\author{}
+\date{}
+\maketitle
+
+\section*{演習問題}
+
+1. 次の関数は $y = \frac{1}{x}$ のグラフをどのように平行移動したグラフの関数か述べよ。
+
+\begin{enumerate}
+\item $y=\frac{1}{x-2}-3$
+\item $y = \frac{2x+1}{x+1}$
+\end{enumerate}
+
+2. 次の関数のグラフを描き、その定義域、値域および漸近線を求めよ。
+
+\begin{enumerate}
+\item $y = -\frac{3}{x}$
+\item $y = \frac{2}{x+1}$
+\item $y = -\frac{2}{x}+3$
+\item $y = \frac{1}{x+2}-1$
+\item $y = -\frac{1}{x+1}+5$
+\item $y = -\frac{1}{2x-2}$
+\item $y = \frac{x-1}{x+2}$
+\item $y = \frac{x}{x+3}$
+\item $y = -\frac{x}{x+1}$
+\item $y = \frac{2x-1}{2x-2}$
+\end{enumerate}
+
+3. 新しい関数のグラフを描き、その定義域および値域を求めよ。
+
+\begin{enumerate}
+\item $y = -\frac{2}{x-3} + 4$
+\end{enumerate}
+
+\end{document}
+```
+さて解けるかな～～～！？
+
+
 
 
 
