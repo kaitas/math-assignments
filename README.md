@@ -36,3 +36,5 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 - GeoGebraを使った日本語数学教材については[明治大学総合数理学部阿原研究室](http://www.aharalab.sakura.ne.jp/geogebra/index.php)
 
 - [基本操作覚書](https://usidesu.hatenablog.com/entry/2020/01/01/000000)
+
+- [分数関数の可視化](https://www.geogebra.org/m/VK8XHfRv)
