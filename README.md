@@ -275,13 +275,16 @@ CloudLaTeXにそのまま新規ファイル作成してコンパイルできま�
 
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/9e5c9f76-c473-451b-9e9e-4cea5098f0c8)
 
-何回やっても、分数関数の一般式が解けません。私の問い方が悪いのでしょうか？
+何回やっても、[分数関数の一般式](https://www.geogebra.org/m/VK8XHfRv)が解けません。私の問い方が悪いのでしょうか？
 
 $y=\frac{k}{x-p}+q$
 
 
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/ac0ba55d-d840-41b4-8b2e-1df4caf6a3ce)
 
+![image](https://github.com/kaitas/math-assignments/assets/5110708/9ac2c02b-da51-4175-b207-73bce42bb183)
+
+ここは自力で解けたお子さんを褒めてあげていいところですね！
 
 
 GeoGebraでは ``=Asymptote(((2 x+1)/(x+1)))`` として簡単に漸近線を得ることができます。
