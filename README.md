@@ -2,7 +2,7 @@
 
 GitHubでは2022年5月19日以降 markdownにおいて LaTeX的な数式が利用できるようになっています。
 
-使い方は簡単、ドル記号で囲えばいいです。
+使い方は簡単、ドル記号で囲えばいいです。注意としては、ドル記号の後にスペースなど入れないこと。
 
 [公式による例](https://github.blog/2022-05-19-math-support-in-markdown/)
 
@@ -11,7 +11,7 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問題」というテンプレがあるので使うといいです。
 
-前半はこんな感じ
+前半はこんな感じ（テンプレそのまま＋マクロを追加）
 ```
 \documentclass[paper=a4, dvipdfmx, fleqn,twocolumn, uplatex]{jlreq}
 \usepackage{amsmath, amssymb,ascmac}
@@ -38,14 +38,13 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 
 開始：　　　　終了：　　　　　得点：\\
 
-1. 次の関数は $y = \frac{1}{x}$のグラフをどのように平行移動したグラフの関数か．
+1. 次の関数は $y = \frac{1}{x}$ のグラフをどのように平行移動したグラフの関数か．
 
-
-(1) $ Y = \frac{1}{x-2}-3$
+(1) $y=\frac{1}{x-2}-3$
 
 \spc
 
-(2) $ y = \frac{2x+1}{x+1}$
+(2) $y = \frac{2x+1}{x+1}$
 
 \spc
 
@@ -58,11 +57,11 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 
 \spcval
 
-(2) $ y = \frac{2}{x+1}$
+(2) $y = \frac{2}{x+1}$
 
 \spcval
 
-(3) $ y = -\frac{2}{x}+3$
+(3) $y = -\frac{2}{x}+3$
 
 \spcval
 
@@ -96,38 +95,42 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 
 3. 次の関数のグラフをかけ．また，その定義域，値域を求めよ．\\
 
-(1) $ y = \frac{2x-3}{x-2}$
+(1) $y = \frac{2x-3}{x-2}$
 
 \spcval
 
-(2) $ y = \frac{x + 3}{x + 1}$
-
-\spcval
-
-
-(3) $ y = \frac{2x+3}{2x-2}$
-
-\spcval
-
-(4) $ y = \frac{-x-4}{x-2}$
-
-\spcval
-
-5) $ y = \frac{x+1}{2x+1}$
-
+(2) $y = \frac{x + 3}{x + 1}$
 
 \spcval
 
 
-6) $ y = \frac{-3x-4}{2x+1}$
+(3) $y = \frac{2x+3}{2x-2}$
 
 \spcval
 
-1. 次の関数は $y = \frac{1}{x}$ のグラフをどのように平行移動したグラフの関数か．
+(4) $y = \frac{-x-4}{x-2}$
 
-(1) $y=\frac{1}{x-2}-3$
+\spcval
 
-(2) $y = \frac{2x+1}{x+1}$
+5) $y = \frac{x+1}{2x+1}$
+
+
+\spcval
+
+
+6) $y = \frac{-3x-4}{2x+1}$
+
+\spcval
+
+最後に 
+```
+\end{document}
+```
+するのをわすれずに
+
+こんな感じに出力されます。
+
+
 
 
 なお、回答編は GeoGebraを使うといいと思います。
