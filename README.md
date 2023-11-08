@@ -197,8 +197,23 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 
 \end{document}
 ```
-さて解けるかな～～～！？
 
+CloudLaTeXにそのまま新規ファイル作成してコンパイルできました。
+
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/996f67b3-f2a9-41c7-b8c0-e1ad0b2ffb8f)
+
+新規ファイル作成して右クリック「ターゲット設定」してからコンパイルです。
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/72226e6c-fd56-42d1-8157-7f260a9e9c28)
+
+
+
+学校のテストっぽく整形したい場合は最初のソースとうまく融合させてあげてください・
+
+
+さて解けるかな～～～！？
+（そんなに難しくはなさそう）
 
 
 
