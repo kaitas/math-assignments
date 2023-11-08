@@ -144,9 +144,19 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 
 ## ChatGPTに問題を生成させる
 
-上記のLaTeXをChatGPT4に渡して「」と聞きます。
+上記のLaTeXをChatGPT4に渡して
+- 日本語のLaTeXで演習問題を生成してください
+- \itemではなく (1), (2),... という形で列挙し、各問題の下に空白を入れてください
+といった感じでフォーマットも指定していきます聞きます。
+
 
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/75f9e562-6391-48c5-8c8f-acb9737c43f9)
+
+> 了解しました。それぞれの問題を (1), (2), ... の形式で列挙し、各問題の下に適切なスペースを追加するように修正したLaTeXコードを以下に示します。
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/603ff9d3-aef0-4dbf-bac8-df28bf913d74)
+
+
 
 ```
 \documentclass[12pt]{article}
@@ -157,6 +167,7 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 \usepackage[japanese]{babel}
+\usepackage{enumitem}
 
 \begin{document}
 
@@ -169,33 +180,34 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 
 1. 次の関数は $y = \frac{1}{x}$ のグラフをどのように平行移動したグラフの関数か述べよ。
 
-\begin{enumerate}
-\item $y=\frac{1}{x-2}-3$
-\item $y = \frac{2x+1}{x+1}$
+\begin{enumerate}[label=(\arabic*)]
+\item $y=\frac{1}{x-2}-3$ \vspace{2em}
+\item $y = \frac{2x+1}{x+1}$ \vspace{2em}
 \end{enumerate}
 
 2. 次の関数のグラフを描き、その定義域、値域および漸近線を求めよ。
 
-\begin{enumerate}
-\item $y = -\frac{3}{x}$
-\item $y = \frac{2}{x+1}$
-\item $y = -\frac{2}{x}+3$
-\item $y = \frac{1}{x+2}-1$
-\item $y = -\frac{1}{x+1}+5$
-\item $y = -\frac{1}{2x-2}$
-\item $y = \frac{x-1}{x+2}$
-\item $y = \frac{x}{x+3}$
-\item $y = -\frac{x}{x+1}$
-\item $y = \frac{2x-1}{2x-2}$
+\begin{enumerate}[label=(\arabic*)]
+\item $y = -\frac{3}{x}$ \vspace{2em}
+\item $y = \frac{2}{x+1}$ \vspace{2em}
+\item $y = -\frac{2}{x}+3$ \vspace{2em}
+\item $y = \frac{1}{x+2}-1$ \vspace{2em}
+\item $y = -\frac{1}{x+1}+5$ \vspace{2em}
+\item $y = -\frac{1}{2x-2}$ \vspace{2em}
+\item $y = \frac{x-1}{x+2}$ \vspace{2em}
+\item $y = \frac{x}{x+3}$ \vspace{2em}
+\item $y = -\frac{x}{x+1}$ \vspace{2em}
+\item $y = \frac{2x-1}{2x-2}$ \vspace{2em}
 \end{enumerate}
 
 3. 新しい関数のグラフを描き、その定義域および値域を求めよ。
 
-\begin{enumerate}
-\item $y = -\frac{2}{x-3} + 4$
+\begin{enumerate}[label=(\arabic*)]
+\item $y = -\frac{2}{x-3} + 4$ \vspace{2em}
 \end{enumerate}
 
 \end{document}
+
 ```
 
 CloudLaTeXにそのまま新規ファイル作成してコンパイルできました。
@@ -208,20 +220,38 @@ CloudLaTeXにそのまま新規ファイル作成してコンパイルできま�
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/72226e6c-fd56-42d1-8157-7f260a9e9c28)
 
 
-
 学校のテストっぽく整形したい場合は最初のソースとうまく融合させてあげてください・
 
 
 さて解けるかな～～～！？
 （そんなに難しくはなさそう）
 
+## 解答例を生成させる
+
+調子に乗って解答例も生成させる。
+
+- 上記の問題の回答編を追加したTeXを生成してください
+- 正答と解答例はすべての問題に対して出力してください。
+
+いい感じの解答解説が生成される雰囲気はありますが、途中で力尽きます。
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/1d43bee6-2cbd-4fd6-b283-dc56ed8e2840)
 
 
+![image](https://github.com/kaitas/math-assignments/assets/5110708/a1fa6a35-851b-4239-a0ad-8c3151184f98)
 
-なお、回答編は GeoGebraを使ってセルフで解いてもらうといいと思います。
+あってるかどうか微妙ですし、
+そもそも解を持つかどうかも微妙な問題が混ざっている可能性もありますので、回答は人間と計算機の力を使いましょう。
+
+## 正しい回答を GeoGebra を使って自分で確認させる
+
+回答編は GeoGebraを使ってセルフで解いてもらうといいと思います。
+
+- [https://www.geogebra.org/calculator](https://www.geogebra.org/calculator)
 
 [https://www.geogebra.org/calculator](https://www.geogebra.org/calculator)
 
+自分で数式を退部してもいいですし、TeXが書けるなら
 数式のところに上記のドルマークで囲われたところを貼り付けると、簡単に描けます。
 
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/0c822dba-58de-4876-bccc-f75e4cabb8e7)
@@ -233,6 +263,23 @@ CloudLaTeXにそのまま新規ファイル作成してコンパイルできま�
 `Asymptote()` を使えば漸近線も求められます
 
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/8622aaf4-b98e-44c6-afee-acd4b8a7dad2)
+
+ちなみにChatGPT4+Wolframプラグインに訊いてみます。
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/3f48133a-7b0e-4a82-900a-287426698895)
+
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/aee5fedb-2fdf-4aae-bc08-0117d5d69984)
+
+え・・・？もしかしてゼロ除算に弱い？？
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/9e5c9f76-c473-451b-9e9e-4cea5098f0c8)
+
+
+GeoGebraでは ``=Asymptote(((2 x+1)/(x+1)))`` として簡単に漸近線を得ることができます。
+
+![image](https://github.com/kaitas/math-assignments/assets/5110708/06a2e5a1-a37a-451e-a3be-71670a082e4a)
+
 
 ## もっと色々やりたい人へ
 
