@@ -27,3 +27,7 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/2d41fd7f-8325-4aaf-b1e0-3da27ef144e1)
 
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/df185ac3-26cc-409a-9e7f-cab9fd07279a)
+
+- GeoGebraを使った日本語数学教材については[明治大学総合数理学部阿原研究室](http://www.aharalab.sakura.ne.jp/geogebra/index.php)
+
+- [基本操作覚書](https://usidesu.hatenablog.com/entry/2020/01/01/000000)
