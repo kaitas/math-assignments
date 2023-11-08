@@ -9,6 +9,30 @@ GitHubでは2022年5月19日以降 markdownにおいて LaTeX的な数式が利�
 > When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
+LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問題」というテンプレがあるので使うといいです。
+
+前半はこんな感じ
+```
+\documentclass[paper=a4, dvipdfmx, fleqn,twocolumn, uplatex]{jlreq}
+\usepackage{amsmath, amssymb,ascmac}
+\usepackage{bxpapersize}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage[top=18truemm,bottom=20truemm,left=18truemm,right=18truemm]{geometry}
+\usepackage{okumacro}
+\usepackage{tcolorbox}
+\usepackage{graphicx,xcolor}
+\usepackage{ceo}
+\tcbuselibrary{skins}
+\usetikzlibrary{patterns}
+\renewcommand{\labelenumi}{(\theenumi)\ }
+\newcommand{\spc}{{\vspace{1cm}}}
+\newcommand{\spcval}{{\vspace{4cm}}値域：　　　　　　　定義域：\\}
+\newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
+\setlength{\columnseprule}{0.8pt}
+\begin{document}
+```
+
 
 基礎数学I 特訓問題　（　　　月　　　日）\\
 
