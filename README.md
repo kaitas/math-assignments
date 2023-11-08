@@ -1,4 +1,4 @@
-# こどもに数学の問題を解いてもらうサンプル
+# こどもに数学の問題を学校のテストに近い雰囲気で解いてもらうサンプル
 
 GitHubでは2022年5月19日以降 markdownにおいて LaTeX的な数式が利用できるようになっています。
 
@@ -130,10 +130,11 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 
 こんな感じに出力されます。
 
+![image](https://github.com/kaitas/math-assignments/assets/5110708/9bb10870-8c43-4539-8434-da78ba40716f)
 
 
 
-なお、回答編は GeoGebraを使うといいと思います。
+なお、回答編は GeoGebraを使ってセルフで解いてもらうといいと思います。
 
 [https://www.geogebra.org/calculator](https://www.geogebra.org/calculator)
 
@@ -148,6 +149,8 @@ LaTeXを使いたい場合は[CloudLaTex](https://cloudlatex.io/)に「数学問
 `Asymptote()` を使えば漸近線も求められます
 
 ![image](https://github.com/kaitas/math-assignments/assets/5110708/8622aaf4-b98e-44c6-afee-acd4b8a7dad2)
+
+## もっと色々やりたい人へ
 
 
 - GeoGebraを使った日本語数学教材については[明治大学総合数理学部阿原研究室](http://www.aharalab.sakura.ne.jp/geogebra/index.php)
