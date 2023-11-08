@@ -12,6 +12,7 @@ $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 (1) $ y = \frac{1}{x-2}-3 $
 
+$y = \frac{1}{2}$
 
 
 (2) $ y = \frac{2x+1}{x+1} $
